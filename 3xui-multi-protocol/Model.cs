@@ -74,7 +74,7 @@ public class Client
 
 public class inboundsetting
 {
-    public List<Client> clients { get; set; }
+//    public List<Client> clients { get; set; }
     public string decryption { get; set; }
     public List<object> fallbacks { get; set; }
 }
@@ -84,6 +84,6 @@ public class localDB
     public int Sec { get; set; }
 
     public List<Client_Traffics> clients { get; set; }
-public List<Client> Client { get; set; }
+    public List<Client> clients { get; set; }
     
 }
