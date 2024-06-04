@@ -27,7 +27,7 @@ while (true)
     var inbounds = db.Inbounds.ToList();
     foreach (var item in inbounds)
     {
-        inboundsetting setting = JsonConvert.DeserializeObject<inboundsetting>(item.Settings);
+ //       inboundsetting setting = JsonConvert.DeserializeObject<inboundsetting>(item.Settings);
         ALLClients.AddRange(setting.clients);
     }
 
