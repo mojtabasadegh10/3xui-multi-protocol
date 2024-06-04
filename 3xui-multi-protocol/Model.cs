@@ -57,7 +57,7 @@ public class Client_Traffics
 
 }
 
-public class Client
+public class client
 {
     public string? email { get; set; }
     public bool? enable { get; set; }
