@@ -135,8 +135,8 @@ while (true)
                 {
 
                     List<Client> pastclients = new List<Client>();
-                    foreach (Client Client in setting.clients)
-                        if (!addtoInbound.Any(x => x.email == client.email)) { pastclients.Add(client); }
+                    foreach (Client Client in setting.Clients)
+                        if (!addtoInbound.Any(x => x.email == Client.email)) { pastclients.Add(Client); }
                     pastclients.AddRange(addtoInbound);
                     setting.Clients = pastclients;
                     inbound.Settings = JsonConvert.SerializeObject(setting);
