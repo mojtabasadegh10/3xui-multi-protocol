@@ -4,7 +4,7 @@ public class MultiProtocolContext : DbContext
 {
     public DbSet<Inbound> Inbounds { get; set; }
     public DbSet<Client_Traffics> Client_Traffics { get; set; }
-//    public DbSet<Client> Clients { get; set; }
+    public DbSet<Client> Clients { get; set; }
 
     public string DbPath { get; }
 
