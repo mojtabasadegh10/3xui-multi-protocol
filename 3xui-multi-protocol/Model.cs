@@ -54,7 +54,7 @@ public class Client_Traffics
     public Int64? Total { get; set; }
     public Int64? Expiry_Time { get; set; }
     public bool? Enable { get; set; }
-    public Int64? tgId { get; set; }
+   
 }
 
 public class Client
