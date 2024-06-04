@@ -67,7 +67,7 @@ public class Client
     public int? limitIp { get; set; }
     public bool? reset { get; set; }
     public string? subId { get; set; }
-    public string? tgId { get; set; }
+    public Int64? tgId { get; set; }
     public Int64? totalGB { get; set; }
 
 }
