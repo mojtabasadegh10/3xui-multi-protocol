@@ -72,13 +72,13 @@ while (true)
                         
                         if (client2.Up != maxUP)
                         {
-                            Int64? oldusage = localDB.clients.Where(x => x.Email == client2.Email).First().Up;
+                            Int64? oldusage = localDB.Clients.Where(x => x.Email == client2.Email).First().Up;
                             if (client2.Up > oldusage && oldusage != 0 && oldusage != null)
                                 UP += client2.Up - oldusage;
                         }
                         if (client2.Down != maxDOWN)
                         {
-                            Int64? oldusage = localDB.clients.Where(x => x.Email == client2.Email).First().Down;
+                            Int64? oldusage = localDB.Clients.Where(x => x.Email == client2.Email).First().Down;
 
                             if (client2.Down > oldusage && oldusage != 0 && oldusage != null)
                                 DOWN += client2.Down - oldusage;
@@ -135,10 +135,10 @@ while (true)
                 {
 
                     List<Client> pastclients = new List<Client>();
-                    foreach (Client client in setting.clients)
+                    foreach (Client Client in setting.clients)
                         if (!addtoInbound.Any(x => x.email == client.email)) { pastclients.Add(client); }
                     pastclients.AddRange(addtoInbound);
-                    setting.clients = pastclients;
+                    setting.Clients = pastclients;
                     inbound.Settings = JsonConvert.SerializeObject(setting);
                     FinalInbounds.Add(inbound);
                 }
@@ -153,7 +153,7 @@ while (true)
     var client_Traffics = new MultiProtocolContext().Client_Traffics
        .ToList();
 
-     localDB updateLocal = new localDB() { Sec = localDB.Sec, clients = client_Traffics };
+     localDB updateLocal = new localDB() { Sec = localDB.Sec, Clients = client_Traffics };
     File.Delete("LocalDB.json");
     var file = File.Create("LocalDB.json");
     StreamWriter streamWriter = new StreamWriter(file);
