@@ -59,7 +59,6 @@ public class Client_Traffics
 
 public class Client
 {
-    public Int64? tgId { get; set; }
     public string? email { get; set; }
     public bool? enable { get; set; }
     public Int64? expiryTime { get; set; }
@@ -68,6 +67,7 @@ public class Client
     public int? limitIp { get; set; }
     public bool? reset { get; set; }
     public string? subId { get; set; }
+    public Int64? tgId { get; set; }
     public Int64? totalGB { get; set; }
 
 }
@@ -84,6 +84,6 @@ public class localDB
     public int Sec { get; set; }
 
     public List<Client_Traffics> clients { get; set; }
-public List<Client> Clients { get; set; }
+public List<Client> Client { get; set; }
     
 }
