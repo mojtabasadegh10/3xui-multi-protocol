@@ -42,6 +42,7 @@ while (true)
             {
 
                 List<Client> Calculate = ALLClients.Where(x => x.subId == client.subId).ToList();
+
                 List<Client_Traffics> Calculate2 = new List<Client_Traffics>();
                 foreach (var client2 in Calculate)
                 {
@@ -123,7 +124,7 @@ while (true)
         {
             if(inbound.Protocol== "vmess" || inbound.Protocol == "vless")
             {
-                inboundsetting setting = JsonConvert.DeserializeObject<inboundsetting>(inbound.Settings);
+        //        inboundsetting setting = JsonConvert.DeserializeObject<inboundsetting>(inbound.Settings);
                 var clis = FinalClients_Traffic.Where(x => x.Inbound_Id == inbound.Id).ToList();
                 List<Client> addtoInbound = new List<Client>();
                 foreach (var client in clis)
