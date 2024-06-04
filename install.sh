@@ -34,7 +34,7 @@ git clone https://github.com/mojtabasadegh10/3xui-multi-protocol.git
 elif [[ "${release}" == "fedora" ]]; then
 dnf install wget
 dnf install git
-git clone https://github.com/M4mmad/3xui-multi-protocol.git
+git clone https://github.com/mojtabasadegh10/3xui-multi-protocol.git
  cd 3xui-multi-protocol/3xui-multi-protocol
   sudo dnf install dotnet-sdk-7.0
   sudo dnf install aspnetcore-runtime-7.0
