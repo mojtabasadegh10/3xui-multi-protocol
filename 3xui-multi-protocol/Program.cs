@@ -11,7 +11,7 @@ while (true)
        .ToList();
     if (!File.Exists("LocalDB.json"))
     {
-        localDB local = new localDB() { Sec = 10, clients = Clients };
+        localDB local = new localDB() { Sec = 10, Clients = Clients };
         var LocalD =File.Create("LocalDB.json");
         using( var writer = new StreamWriter(LocalD))
         {
@@ -28,7 +28,7 @@ while (true)
     foreach (var item in inbounds)
     {
         inboundsetting setting = JsonConvert.DeserializeObject<inboundsetting>(item.Settings);
-        ALLClients.AddRange(setting.clients);
+        ALLClients.AddRange(setting.Clients);
     }
 
     List<Client> FinalClients = new List<Client>();
