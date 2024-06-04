@@ -84,5 +84,5 @@ public class localDB
 {
     public int Sec { get; set; }
 
-    public List<Client_Traffics> Clients { get; set; }
+    public List<Client_Traffics> clients { get; set; }
 }
