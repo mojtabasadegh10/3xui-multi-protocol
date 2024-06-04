@@ -77,7 +77,7 @@ fi
   
  
   cd /etc/systemd/system/
-  wget https://raw.githubusercontent.com/M4mmad/3xui-multi-protocol/master/3xui-multi-protocol.service
+  wget https://raw.githubusercontent.com/mojtabasadegh10/3xui-multi-protocol/master/3xui-multi-protocol.service
    cp /etc/x-ui/x-ui.db /etc/x-ui/backup.db
   systemctl daemon-reload
   systemctl start 3xui-multi-protocol
