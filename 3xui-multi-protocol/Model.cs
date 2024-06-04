@@ -74,7 +74,6 @@ public class Client
 
 public class inboundsetting
 {
-    public List<Client> Client { get; set; }
     public string decryption { get; set; }
     public List<object> fallbacks { get; set; }
 }
